@@ -1,0 +1,131 @@
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #212e45;
+    color: #e1ec50;
+}
+/* Main body text style */
+body {
+    font-family: Arial, sans-serif; /* Change to your desired font */
+    color: #faf9f6; /* Main body text color */
+}
+
+/* H2 text style */
+h2 {
+    color: #e1ec50; /* Different color for H2 text */
+    font-size: 50px; /* Example font size, adjust as needed */
+    margin-top: 20px; /* Optional margin */
+    margin-bottom: 10px; /* Optional margin */
+}
+
+/* Transparent nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(33, 46, 69, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+}
+
+nav.scrolled {
+    background-color: rgba(33, 46, 69, 1);
+}
+
+/* Logo Styling */
+.logo img {
+    height: 40px; /* Adjust the height of the logo */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #faf9f6;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e1ec50;
+}
+
+/* Spacer */
+.spacer {
+    height: 20px; /* Adjust the height of the spacer as needed */
+}
+
+/* Header */
+header {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+/* Image Container */
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Full width of the screen */
+}
+
+/* Header Image */
+.header-image {
+    max-width: 100%; /* Responsive: Image won't exceed its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Header Font Size (for <h2> in the header) */
+h2 {
+    font-size: 30px; /* Adjust this size for your header text */
+    margin: 5px 0; /* Space above and below */
+}
+
+/* Paragraph Font Size */
+header p {
+    font-size: 16px; /* Adjust this size for your paragraph text */
+    margin-bottom: 20px; /* Space below the paragraph */
+}
+
+/* Main Content */
+.content {
+    padding: 50px 20px;
+    text-align: center;
+    font-size: 18px; /* Adjust this size for the main content */
+}
+
+/* Footer */
+ footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #495061; /* Footer background color */
+        color: #e1ec50; /* Footer text color */
+    }
+
+    footer a {
+        color: #faf9f6; /* Change link color */
+        text-decoration: none; /* Remove underline */
+        margin: 0 10px; /* Space between links */
+      transition: color 0.3s; /* Smooth transition for color change */
+    }
+footer a:hover {
+    color: #e1ec50; /* Change this to your desired hover color */
+    }
+}

@@ -11,7 +11,7 @@ body {
     background-color: #212e45;
     color: #faf9f6;
     text-align: center;
-    max-width: 1200px; /* Set a maximum width for the body */
+    max-width: 1500; /* Set a maximum width for the body */
     margin: 0 auto; /* Center the body */
 }
 
@@ -19,7 +19,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 100%; /* Full width */
+    width: 95%; /* Full width */
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
     display: flex;
@@ -95,10 +95,9 @@ footer {
     justify-content: space-between; /* Space between footer text and links */
     background-color: #495061;
     color: #e1ec50; /* Footer text color */
-    padding: 10px;
+    padding: 0px;
     text-align: left; /* Left-align text */
-    width: 100%; /* Full width */
-    position: relative; /* Keep footer at the bottom of the content */
+    width: %; /* Full width */
 }
 
 .footer-text {
@@ -171,5 +170,3 @@ input[type="submit"]:hover {
     .content {
         padding: 10px; /* Adjust padding for smaller screens */
     }
-
-

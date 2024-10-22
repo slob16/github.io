@@ -80,7 +80,7 @@ h2 {
 }
 
 .content {
-    margin: 10px auto; /* Space below the navbar */
+    margin: auto; /* Space below the navbar */
     max-width: 600px; /* Limit the width of the content */
     padding: 10px; /* Added padding for better spacing */
     text-align: center;
@@ -114,7 +114,7 @@ footer a:hover {
 
 /* Contact Page Container */
 .container {
-    width: 50%; /* Adjust this to your desired width */
+    width: 100%; /* Adjust this to your desired width */
     max-width: 600px; /* Optional: maximum width */
     padding: 20px; /* Padding for inner spacing */
     margin: 30px auto; /* Center the container */
@@ -148,7 +148,7 @@ label {
 }
 
 input, textarea {
-    width: 100%;
+    width: 80%;
     padding: 20px;
     margin-bottom: 20px;
     border-radius: 4px;

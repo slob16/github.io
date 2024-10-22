@@ -8,20 +8,25 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
-    color: #e1ec50;
-}
-/* Main body text style */
-body {
-    font-family: 'Roboto', sans-serif; /* Change to your desired font */
-    color: #faf9f6; /* Main body text color */
+    color: #faf9f6;
+    display: flex;
+    justify-content: center; /* Horizontally centers the content */
+    align-items: center; /* Vertically centers the content */
+    min-height: 100vh; /* Full viewport height */
+    margin: 0;
 }
 
-/* H2 text style */
-h2 {
-    color: #e1ec50; /* Different color for H2 text */
+/* Main body text style */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* H2 text style for the main page */
+.main-heading {
+    color: #e1ec50;
     font-size: 50px; /* Example font size, adjust as needed */
-    margin-top: 10px; /* Optional margin */
-    margin-bottom: 10px; /* Optional margin */
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 /* Transparent nav bar */
@@ -67,10 +72,10 @@ nav.scrolled {
 /* Header */
 header {
     display: flex;
-    flex-direction: column; /* Align items vertically */
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center; /* Center text */
+    text-align: center;
 }
 
 /* Image Container */
@@ -78,54 +83,54 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 75%; /* Full width of the screen */
+    width: 75%;
 }
 
 /* Header Image */
 .header-image {
-    max-width: 100%; /* Responsive: Image won't exceed its container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%;
+    height: auto;
 }
 
 /* Header Font Size (for <h2> in the header) */
 h2 {
-    font-size: 30px; /* Adjust this size for your header text */
-    margin: 5px 0; /* Space above and below */
+    font-size: 30px;
+    margin: 5px 0;
 }
 
 /* Paragraph Font Size */
 header p {
-    font-size: 16px; /* Adjust this size for your paragraph text */
-    margin-bottom: 10px; /* Space below the paragraph */
+    font-size: 16px;
+    margin-bottom: 10px;
 }
 
 /* Main Content */
 .content {
     padding: 50px 20px;
     text-align: center;
-    font-size: 18px; /* Adjust this size for the main content */
+    font-size: 18px;
 }
 
 /* Footer */
- footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #495061; /* Footer background color */
-        color: #e1ec50; /* Footer text color */
-    }
-
-    footer a {
-        color: #faf9f6; /* Change link color */
-        text-decoration: none; /* Remove underline */
-        margin: 0 10px; /* Space between links */
-      transition: color 0.3s; /* Smooth transition for color change */
-    }
-footer a:hover {
-    color: #e1ec50; /* Change this to your desired hover color */
-    }
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #495061;
+    color: #e1ec50;
 }
+
+footer a {
+    color: #faf9f6;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #e1ec50;
+}
+
 /* Glassmorphism Effect for the Form Container */
-/* Centering the contact form box */
 .container {
     width: 50%;
     padding: 20px;
@@ -137,14 +142,17 @@ footer a:hover {
     border: 1px solid rgba(225, 236, 80, 0.7);
     
     /* Flexbox centering */
-    margin: 30px auto;  /* Horizontal centering */
-    position: relative; /* Position relative so top margin works */
-    top: 50%; /* Push container to the middle vertically */
-    transform: translateY(-50%); /* Vertically center the container */
+    margin: 80px auto 30px auto;  /* Horizontal centering, 80px margin-top for space under navbar */
+    display: flex;
+    flex-direction: column; /* Stack elements inside the container */
+    justify-content: center;
+    align-items: center;
 }
 
-h2 {
+/* Heading inside Contact Form */
+.contact-heading {
     color: #e1ec50;
+    font-size: 30px; /* Adjust this size for your form header */
     text-align: center;
 }
 
@@ -186,4 +194,11 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #faf9f6;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Adjust the width for smaller screens */
+    }
 }

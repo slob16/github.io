@@ -17,8 +17,6 @@ body {
 nav {
     position: fixed;
     top: 0;
-    left: 0; /* Align to left */
-    right: 0; /* Align to right */
     width: 100%;
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
@@ -36,7 +34,6 @@ nav.scrolled {
 /* Logo */
 .logo img {
     height: 40px;
-    max-height: 100%; /* Ensure it scales correctly */
 }
 
 /* Navigation Links */
@@ -54,7 +51,6 @@ nav.scrolled {
 .nav-links a:hover {
     color: #e1ec50;
 }
-
 /* Header styling */
 header {
     padding-top: 70px; /* Space below the fixed navbar */

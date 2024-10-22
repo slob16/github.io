@@ -1,5 +1,5 @@
 html, body {
-    width: 80%; /* Ensure full width */
+    width: auto; /* Ensure full width */
     height: auto; /* Allow height to adjust based on content */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */

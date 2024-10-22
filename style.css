@@ -99,6 +99,7 @@ footer {
     padding: 10px;
     text-align: left; /* Left-align text */
     width: 100%; /* Full width */
+    position: relative; /* Keep footer at the bottom of the content */
 }
 
 footer .footer-text {

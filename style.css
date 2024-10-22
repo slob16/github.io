@@ -20,7 +20,7 @@ body {
 h2 {
     color: #e1ec50; /* Different color for H2 text */
     font-size: 50px; /* Example font size, adjust as needed */
-    margin-top: 20px; /* Optional margin */
+    margin-top: 10px; /* Optional margin */
     margin-bottom: 10px; /* Optional margin */
 }
 
@@ -66,7 +66,7 @@ nav.scrolled {
 
 /* Spacer */
 .spacer {
-    height: 20px; /* Adjust the height of the spacer as needed */
+    height: 5px; /* Adjust the height of the spacer as needed */
 }
 
 /* Header */
@@ -83,7 +83,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Full width of the screen */
+    width: 75%; /* Full width of the screen */
 }
 
 /* Header Image */
@@ -101,7 +101,7 @@ h2 {
 /* Paragraph Font Size */
 header p {
     font-size: 16px; /* Adjust this size for your paragraph text */
-    margin-bottom: 20px; /* Space below the paragraph */
+    margin-bottom: 10px; /* Space below the paragraph */
 }
 
 /* Main Content */

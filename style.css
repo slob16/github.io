@@ -55,7 +55,7 @@ nav.scrolled {
 }
 /* Header styling */
 header {
-    padding-top: 40px; /* Space below the fixed navbar */
+    padding-top: 20px; /* Space below the fixed navbar */
     width: 100%;
 }
 
@@ -81,7 +81,7 @@ h2 {
 }
 
 .content {
-    margin: 20px auto; /* Space below the navbar */
+    margin: 10px auto; /* Space below the navbar */
     max-width: 600px; /* Limit the width of the content */
     padding: 10px; /* Added padding for better spacing */
     text-align: center;

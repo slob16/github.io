@@ -55,7 +55,7 @@ nav.scrolled {
 /* Header styling */
 header {
     padding-top: 10px; /* Space below the fixed navbar */
-    width: 80%;
+    width: auto;
 }
 
 /* Center the image */
@@ -66,7 +66,7 @@ header {
 }
 
 .header-image {
-    max-width: 75%; /* Responsive image */
+    max-width: auto; /* Responsive image */
     height: auto; /* Maintain aspect ratio */
 }
 

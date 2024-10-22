@@ -1,5 +1,5 @@
 html, body {
-    width: 100%; /* Ensure full width */
+    width: auto; /* Ensure full width */
     height: auto; /* Allow height to adjust based on content */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
@@ -17,7 +17,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: auto;
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
     display: flex;
@@ -167,14 +167,5 @@ input[type="submit"]:hover {
     .content {
         padding: 10px; /* Adjust padding for smaller screens */
     }
-    
-    .nav-links {
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center them */
-        width: 100%; /* Full width for mobile */
-    }
-    
-    nav {
-         padding: 10px; /* Adjust padding */
-    }
+
 

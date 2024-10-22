@@ -16,7 +16,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 80%;
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
     display: flex;
@@ -55,7 +55,7 @@ nav.scrolled {
 /* Header styling */
 header {
     padding-top: 10px; /* Space below the fixed navbar */
-    width: 100%;
+    width: 80%;
 }
 
 /* Center the image */
@@ -95,7 +95,7 @@ footer {
     align-items: center;
     text-align: center;
     position: relative; /* Position relative for footer */
-    width: 100%; /* Full width */
+    width: 80%; /* Full width */
 }
 
 footer .footer-text {

@@ -74,6 +74,13 @@ header {
 }
 
 /* Main Content */
+h2 {
+    color: #e1ec50; /* Text color */
+    font-size: 30px; /* Font size */
+    margin: 10px 0; /* Space above and below the header */
+    text-align: center; /* Center the text */
+    font-weight: bold; /* Make the text bold */
+}
 .content {
     margin: 20px auto;
     max-width: 800px; /* Limit the width of the content */
@@ -82,15 +89,26 @@ header {
     font-size: 18px;
 }
 
-/* Footer */
+/* Footer *//* Footer Styling */
 footer {
     background-color: #495061;
-    color: #e1ec50;
+    color: #e1ec50; /* Footer text color */
     padding: 10px;
     text-align: center;
     position: fixed;
-    width: 100%; /* Ensure footer spans the full width */
+    width: 100%;
     bottom: 0;
+}
+
+footer a {
+    color: #e1ec50; /* Correct link color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #faf9f6; /* Correct hover color */
 }
 
 /* Contact Page Container */

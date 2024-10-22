@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #212e45;
     color: #e1ec50;
 }
@@ -128,4 +128,89 @@ header p {
 footer a:hover {
     color: #e1ec50; /* Change this to your desired hover color */
     }
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212e45;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism Effect for the Form Container */
+.container {
+    width: 50%;
+    padding: 20px;
+    background: rgba(33, 46, 69, 0.7); /* Semi-transparent background */
+    box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(225, 236, 80, 0.7);
+    margin-top: 50px;
+}
+
+h2 {
+    color: #e1ec50;
+    text-align: center;
+}
+
+label {
+    font-size: 16px;
+    color: #faf9f6;
+    margin-bottom: 8px;
+}
+
+/* Raised Effect on Focus */
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-family: 'Roboto', sans-serif; /* Ensure Roboto is applied */
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(225, 236, 80);
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #e1ec50;
+    color: #212e45;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #faf9f6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #495061;
+}
+
+a {
+    color: #e1ec50;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #faf9f6;
 }

@@ -3,7 +3,6 @@ html, body {
     height: auto; /* Allow height to adjust based on content */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
-    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {

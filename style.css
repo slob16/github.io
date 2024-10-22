@@ -1,21 +1,25 @@
-/* Basic reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styling */
+/* Body Styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
-    color: #faf9f6;
-    text-align: center; /* Ensure text is centered */
-    margin: 0;
-    padding: 0;
+    color: #faf9f6; /* Main body text color */
 }
 
-/* Nav Bar */
+/* Main body text title styling (h2) */
+h2 {
+    color: #e1ec50; /* Title color */
+    font-size: 30px; /* Adjust title size */
+    margin-bottom: 20px;
+}
+
+/* Navigation Styling */
 nav {
     position: fixed;
     top: 0;
@@ -25,17 +29,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: background-color 0.3s ease;
     z-index: 9999;
 }
 
 nav.scrolled {
     background-color: rgba(33, 46, 69, 1);
-}
-
-/* Logo */
-.logo img {
-    height: 40px;
 }
 
 /* Navigation Links */
@@ -54,21 +52,17 @@ nav.scrolled {
     color: #e1ec50;
 }
 
-/* Header styling */
-header {
-    padding-top: 30px; /* Ensures there's space below the fixed navbar */
-    width: 100%;
-}
-
-/* Center the image */
+/* Image Container */
 .image-container {
     display: flex;
-    justify-content: center; /* Centers the image */
-    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px; /* Adjust this value to move the image up */
 }
 
 .header-image {
-    max-width: 75%;
+    max-width: 100%;
     height: auto;
     display: block;
 }
@@ -76,24 +70,13 @@ header {
 /* Main Content */
 .content {
     margin: 20px auto;
-    max-width: 800px; /* Limit the width of the content */
+    max-width: 800px;
     padding: 20px;
-    text-align: center;
     font-size: 18px;
+    color: #faf9f6; /* Main content text color */
 }
 
-/* Footer */
-footer {
-    background-color: #495061;
-    color: #e1ec50;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    width: 100%; /* Ensure footer spans the full width */
-    bottom: 0;
-}
-
-/* Contact Page Container */
+/* Contact Page Form */
 .container {
     margin: 150px auto;
     width: 50%;
@@ -107,41 +90,48 @@ footer {
     text-align: center;
 }
 
-.contact-heading {
+.container h2 {
     font-size: 30px;
     color: #e1ec50;
 }
 
-label {
-    font-size: 16px;
-    color: #faf9f6;
-    text-align: left;
-    display: block;
-}
-
+/* Input and Textarea Styling */
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
+    border: 1px solid #ccc;
     border-radius: 4px;
+    font-family: 'Roboto', sans-serif; /* Consistent font across the form */
+    color: #faf9f6; /* Consistent text color */
+    background-color: #212e45; /* Background matches the form styling */
 }
 
-input[type="submit"] {
-    width: 100%;
-    background-color: #e1ec50;
-    color: #212e45;
+/* Footer Styling */
+footer {
+    background-color: #495061;
+    color: #e1ec50;
     padding: 10px;
-    border: none;
-    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
 
-input[type="submit"]:hover {
-    background-color: #faf9f6;
+footer a {
+    color: #faf9f6; /* Correct link color */
+    text-decoration: none; /* No underline */
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #faf9f6; /* Hover color change */
 }
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Reduce width for smaller screens */
+        width: 90%;
     }
 }

@@ -1,6 +1,6 @@
 html, body {
     width: 100%; /* Ensure full width */
-    height: auto; /* Allow height to adjust based on content */
+    height: 100%; /* Allow height to adjust based on content */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
 }
@@ -169,5 +169,15 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background-color: #faf9f6;
 }
+/* Responsive adjustment */
+@media (max-width: 768px) {
+    .container {
+        width: 90%; /* Reduce width for smaller screens */
+    }
+    
+    .content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
 
 

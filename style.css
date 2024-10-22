@@ -1,12 +1,14 @@
+html, body {
+    height: 100%; /* Full height */
+    margin: 0; /* Reset margin */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
     color: #faf9f6;
-    text-align: center; /* Ensure text is centered */
-    margin: 0;
-    padding: 0;
+    text-align: center;
 }
 
 /* Nav Bar */
@@ -50,7 +52,7 @@ nav.scrolled {
 
 /* Header styling */
 header {
-    padding-top: 30px; /* Ensures there's space below the fixed navbar */
+    padding-top: 70px; /* Space below the fixed navbar */
     width: 100%;
 }
 
@@ -62,9 +64,8 @@ header {
 }
 
 .header-image {
-    max-width: 75%;
-    height: auto;
-    display: block;
+    max-width: 100%; /* Responsive image */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Main Content */
@@ -75,23 +76,23 @@ h2 {
     text-align: center; /* Center the text */
     font-weight: bold; /* Make the text bold */
 }
+
 .content {
-    margin: 20px auto;
+    margin: 80px auto; /* Space below the navbar */
     max-width: 800px; /* Limit the width of the content */
-    padding: 10px;
+    padding: 20px; /* Added padding for better spacing */
     text-align: center;
     font-size: 18px;
 }
 
-/* Footer *//* Footer Styling */
+/* Footer Styling */
 footer {
     background-color: #495061;
     color: #e1ec50; /* Footer text color */
     padding: 10px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    position: relative; /* Position relative for footer */
+    width: 100%; /* Full width */
 }
 
 footer a {
@@ -155,5 +156,9 @@ input[type="submit"]:hover {
 @media (max-width: 768px) {
     .container {
         width: 90%; /* Reduce width for smaller screens */
+    }
+    
+    .content {
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }

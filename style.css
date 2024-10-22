@@ -1,25 +1,19 @@
-/* Basic reset and body styling */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
     color: #faf9f6;
+    text-align: center; /* Ensure text is centered */
 }
 
-/* H2 text style for the main page */
-.main-heading {
-    color: #e1ec50;
-    font-size: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-/* Transparent nav bar */
+/* Nav Bar */
 nav {
     position: fixed;
     top: 0;
@@ -37,7 +31,7 @@ nav.scrolled {
     background-color: rgba(33, 46, 69, 1);
 }
 
-/* Logo Styling */
+/* Logo */
 .logo img {
     height: 40px;
 }
@@ -52,88 +46,79 @@ nav.scrolled {
     color: #faf9f6;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #e1ec50;
 }
 
-/* Header */
+/* Header styling */
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 100px; /* To prevent content from hiding under the fixed navbar */
+    padding-top: 100px; /* Ensures there's space below the fixed navbar */
 }
 
-/* Image Container */
+.header h1 {
+    font-size: 50px;
+    color: #e1ec50;
+}
+
+/* Center the image */
 .image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 75%;
+    justify-content: center; /* Centers the image */
+    margin-top: 20px;
 }
 
-/* Header Image */
 .header-image {
     max-width: 100%;
     height: auto;
 }
 
-/* Header Font Size (for <h2> in the header) */
-h2 {
-    font-size: 30px;
-    margin: 5px 0;
-}
-
-/* Paragraph Font Size */
-header p {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
 /* Main Content */
 .content {
-    padding: 50px 20px;
+    margin: 20px auto;
+    max-width: 800px; /* Limit the width of the content */
+    padding: 20px;
     text-align: center;
     font-size: 18px;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
     background-color: #495061;
     color: #e1ec50;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
 }
 
 footer a {
     color: #faf9f6;
     text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
 }
 
 footer a:hover {
     color: #e1ec50;
 }
-/* Basic reset and body styling */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Body styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
     color: #faf9f6;
+    text-align: center; /* Ensure text is centered */
 }
 
-/* Transparent nav bar */
+/* Nav Bar */
 nav {
     position: fixed;
     top: 0;
@@ -151,7 +136,7 @@ nav.scrolled {
     background-color: rgba(33, 46, 69, 1);
 }
 
-/* Logo Styling */
+/* Logo */
 .logo img {
     height: 40px;
 }
@@ -166,59 +151,43 @@ nav.scrolled {
     color: #faf9f6;
     text-decoration: none;
     font-size: 16px;
-    transition: color 0.3s ease;
 }
 
 .nav-links a:hover {
     color: #e1ec50;
 }
 
-/* Centering the contact form box */
+/* Contact Form */
 .container {
+    margin: 150px auto;
     width: 50%;
     padding: 20px;
-    background: rgba(33, 46, 69, 0.7);
+    background-color: rgba(33, 46, 69, 0.7);
     box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37);
+    border-radius: 10px;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-radius: 10px;
     border: 1px solid rgba(225, 236, 80, 0.7);
-    margin: 100px auto 30px auto; /* Add space below navbar */
     text-align: center;
 }
 
-/* Heading inside Contact Form */
 .contact-heading {
-    color: #e1ec50;
     font-size: 30px;
-    text-align: center;
-    margin-bottom: 20px;
+    color: #e1ec50;
 }
 
 label {
     font-size: 16px;
     color: #faf9f6;
-    margin-bottom: 8px;
+    text-align: left;
     display: block;
-    text-align: left; /* Align labels to the left */
 }
 
-/* Raised Effect on Focus */
-input[type="text"], input[type="email"], textarea {
+input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    box-sizing: border-box;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: 'Roboto', sans-serif;
-}
-
-input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(225, 236, 80);
-    outline: none;
 }
 
 input[type="submit"] {
@@ -227,19 +196,37 @@ input[type="submit"] {
     color: #212e45;
     padding: 10px;
     border: none;
-    border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
-    transition: transform 0.2s ease;
 }
 
 input[type="submit"]:hover {
     background-color: #faf9f6;
 }
 
-/* Responsive adjustments */
+/* Footer */
+footer {
+    background-color: #495061;
+    color: #e1ec50;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+footer a {
+    color: #faf9f6;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #e1ec50;
+}
+
+/* Responsive adjustment */
 @media (max-width: 768px) {
     .container {
-        width: 90%; /* Adjust the width for smaller screens */
+        width: 90%; /* Reduce width for smaller screens */
     }
 }

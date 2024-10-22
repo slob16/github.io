@@ -1,25 +1,21 @@
-/* Reset */
+/* Basic reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
+/* Body styling */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
-    color: #faf9f6; /* Main body text color */
+    color: #faf9f6;
+    text-align: center; /* Ensure text is centered */
+    margin: 0;
+    padding: 0;
 }
 
-/* Main body text title styling (h2) */
-h2 {
-    color: #e1ec50; /* Title color */
-    font-size: 30px; /* Adjust title size */
-    margin-bottom: 20px;
-}
-
-/* Navigation Styling */
+/* Nav Bar */
 nav {
     position: fixed;
     top: 0;
@@ -29,11 +25,17 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: background-color 0.3s ease;
     z-index: 9999;
 }
 
 nav.scrolled {
     background-color: rgba(33, 46, 69, 1);
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
 }
 
 /* Navigation Links */
@@ -52,13 +54,17 @@ nav.scrolled {
     color: #e1ec50;
 }
 
-/* Image Container */
+/* Header styling */
+header {
+    padding-top: 100px; /* Ensures there's space below the fixed navbar */
+    width: 100%;
+}
+
+/* Center the image */
 .image-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    margin-top: 50px; /* Adjust this value to move the image up */
+    justify-content: center; /* Centers the image */
+    margin-top: 20px;
 }
 
 .header-image {
@@ -69,20 +75,25 @@ nav.scrolled {
 
 /* Main Content */
 .content {
-
-    /* Main body text title styling (h2) */
-h2 {
-    color: #e1ec50; /* Title color */
-    font-size: 30px; /* Adjust title size */
-    margin-bottom: 20px;
     margin: 20px auto;
-    max-width: 800px;
+    max-width: 800px; /* Limit the width of the content */
     padding: 20px;
+    text-align: center;
     font-size: 18px;
-    color: #faf9f6; /* Main content text color */
 }
 
-/* Contact Page Form */
+/* Footer */
+footer {
+    background-color: #495061;
+    color: #e1ec50;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%; /* Ensure footer spans the full width */
+    bottom: 0;
+}
+
+/* Contact Page Container */
 .container {
     margin: 150px auto;
     width: 50%;
@@ -96,48 +107,41 @@ h2 {
     text-align: center;
 }
 
-.container h2 {
+.contact-heading {
     font-size: 30px;
     color: #e1ec50;
 }
 
-/* Input and Textarea Styling */
+label {
+    font-size: 16px;
+    color: #faf9f6;
+    text-align: left;
+    display: block;
+}
+
 input, textarea {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    font-family: 'Roboto', sans-serif; /* Consistent font across the form */
-    color: #faf9f6; /* Consistent text color */
-    background-color: #212e45; /* Background matches the form styling */
 }
 
-/* Footer Styling */
-footer {
-    background-color: #495061;
-    color: #e1ec50;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
+input[type="submit"] {
     width: 100%;
-    bottom: 0;
+    background-color: #e1ec50;
+    color: #212e45;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
 }
 
-footer a {
-    color: #e1ec50; /* Correct link color */
-    text-decoration: none; /* No underline */
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: #faf9f6; /* Hover color change */
+input[type="submit"]:hover {
+    background-color: #faf9f6;
 }
 
 /* Responsive adjustment */
 @media (max-width: 768px) {
     .container {
-        width: 90%;
+        width: 90%; /* Reduce width for smaller screens */
     }
 }

@@ -115,54 +115,67 @@ footer a:hover {
 }
 
 /* Contact Page Container */
+/* Contact Page Container */
 .container {
-    width: 40%; /* Adjust this to your desired width */
-    max-width: 500px; /* Maximum width */
-    padding: 20px; /* Padding for inner spacing */
-    margin: 150px auto; /* Center the container */
-    background-color: rgba(33, 46, 69, 0.7); /* Background color */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37); /* Shadow effect */
+    width: 40%; /* Adjusted width */
+    max-width: 500px;
+    padding: 20px;
+    margin: 150px auto;
+    background-color: rgba(33, 46, 69, 0.7);
     border-radius: 15px;
+    box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(225, 236, 80, 0.7);
     text-align: center;
 }
 
-.contact-heading {
+.container h2 {
     font-size: 30px;
     color: #e1ec50;
+    margin-bottom: 20px;
 }
 
 label {
     line-height: 1.5;
     font-size: 16px;
     color: #faf9f6;
-    text-align: justify;
-    display: flex;
-    margin-bottom: 15px;
+    text-align: left;
+    display: block;
+    margin-bottom: 8px;
 }
 
 input, textarea {
-    width: 85%;
-    padding: 40px;
+    width: 90%; /* Adjusted for better fit */
+    padding: 12px;
     margin-bottom: 20px;
     border-radius: 8px;
+    border: 1px solid rgba(225, 236, 80, 0.5);
+    background-color: #212e45; /* Dark background */
+    color: #faf9f6; /* Light text color */
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    border: 1px solid #e1ec50; /* Highlighted border on focus */
+    outline: none;
 }
 
 input[type="submit"] {
-    width: 100%;
-    background-color: rgba(225, 236, 80, 0.7);
+    width: 90%; /* Full width within the container */
+    padding: 15px;
+    background-color: #e1ec50; /* Bright button background */
     color: #212e45;
-    padding: 20px;
+    border-radius: 8px;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 input[type="submit"]:hover {
-    background-color: rgba(225, 236, 80, 0.9);
-    
+    background-color: #fff700; /* Brighter on hover */
+    box-shadow: 0 0 15px #e1ec50; /* Glowing effect on hover */   
 }
 /* Responsive adjustment */
 @media (max-width: 768px) {

@@ -124,13 +124,6 @@ footer a:hover {
     color: #e1ec50; /* Change this to your desired hover color */
     }
 }
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #212e45;
-}
-
 /* Glassmorphism Effect for the Form Container */
 /* Centering the contact form box */
 .container {

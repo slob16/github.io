@@ -69,6 +69,12 @@ nav.scrolled {
 
 /* Main Content */
 .content {
+
+    /* Main body text title styling (h2) */
+h2 {
+    color: #e1ec50; /* Title color */
+    font-size: 30px; /* Adjust title size */
+    margin-bottom: 20px;
     margin: 20px auto;
     max-width: 800px;
     padding: 20px;
@@ -119,7 +125,7 @@ footer {
 }
 
 footer a {
-    color: #faf9f6; /* Correct link color */
+    color: #e1ec50; /* Correct link color */
     text-decoration: none; /* No underline */
     margin: 0 10px;
     transition: color 0.3s;

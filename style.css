@@ -9,22 +9,12 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #212e45;
     color: #faf9f6;
-    display: flex;
-    justify-content: center; /* Horizontally centers the content */
-    align-items: center; /* Vertically centers the content */
-    min-height: 100vh; /* Full viewport height */
-    margin: 0;
-}
-
-/* Main body text style */
-body {
-    font-family: 'Roboto', sans-serif;
 }
 
 /* H2 text style for the main page */
 .main-heading {
     color: #e1ec50;
-    font-size: 50px; /* Example font size, adjust as needed */
+    font-size: 50px;
     margin-top: 10px;
     margin-bottom: 10px;
 }
@@ -49,7 +39,7 @@ nav.scrolled {
 
 /* Logo Styling */
 .logo img {
-    height: 40px; /* Adjust the height of the logo */
+    height: 40px;
 }
 
 /* Navigation Links */
@@ -76,6 +66,7 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 100px; /* To prevent content from hiding under the fixed navbar */
 }
 
 /* Image Container */
@@ -129,37 +120,87 @@ footer a {
 footer a:hover {
     color: #e1ec50;
 }
+/* Basic reset and body styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-/* Glassmorphism Effect for the Form Container */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #212e45;
+    color: #faf9f6;
+}
+
+/* Transparent nav bar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgba(33, 46, 69, 0.8);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    z-index: 9999;
+}
+
+nav.scrolled {
+    background-color: rgba(33, 46, 69, 1);
+}
+
+/* Logo Styling */
+.logo img {
+    height: 40px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #faf9f6;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e1ec50;
+}
+
+/* Centering the contact form box */
 .container {
     width: 50%;
     padding: 20px;
-    background: rgba(33, 46, 69, 0.7); /* Semi-transparent background */
+    background: rgba(33, 46, 69, 0.7);
     box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border: 1px solid rgba(225, 236, 80, 0.7);
-    
-    /* Flexbox centering */
-    margin: 80px auto 30px auto;  /* Horizontal centering, 80px margin-top for space under navbar */
-    display: flex;
-    flex-direction: column; /* Stack elements inside the container */
-    justify-content: center;
-    align-items: center;
+    margin: 100px auto 30px auto; /* Add space below navbar */
+    text-align: center;
 }
 
 /* Heading inside Contact Form */
 .contact-heading {
     color: #e1ec50;
-    font-size: 30px; /* Adjust this size for your form header */
+    font-size: 30px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 label {
     font-size: 16px;
     color: #faf9f6;
     margin-bottom: 8px;
+    display: block;
+    text-align: left; /* Align labels to the left */
 }
 
 /* Raised Effect on Focus */
@@ -171,7 +212,7 @@ input[type="text"], input[type="email"], textarea {
     border-radius: 4px;
     box-sizing: border-box;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    font-family: 'Roboto', sans-serif; /* Ensure Roboto is applied */
+    font-family: 'Roboto', sans-serif;
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {

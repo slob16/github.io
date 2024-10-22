@@ -39,12 +39,14 @@ nav.scrolled {
 .nav-links {
     display: flex;
     gap: 20px;
+    margin-left: auto;
 }
 
 .nav-links a {
     color: #faf9f6;
     text-decoration: none;
     font-size: 16px;
+
 }
 
 .nav-links a:hover {

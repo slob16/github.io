@@ -129,11 +129,12 @@ body {
     margin: 0;
     padding: 0;
     background-color: #212e45;
+    
+    /* Flexbox to center items vertically and horizontally */
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full viewport height */
 }
 
 /* Glassmorphism Effect for the Form Container */
@@ -198,20 +199,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #faf9f6;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #495061;
-}
-
-a {
-    color: #e1ec50;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #faf9f6;
 }

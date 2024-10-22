@@ -55,7 +55,7 @@ nav.scrolled {
 }
 /* Header styling */
 header {
-    padding-top: 20px; /* Space below the fixed navbar */
+    padding-top: 10px; /* Space below the fixed navbar */
     width: 100%;
 }
 
@@ -92,7 +92,7 @@ h2 {
 footer {
     background-color: #495061;
     color: #e1ec50; /* Footer text color */
-    padding: 10px 20px;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -116,7 +116,7 @@ footer a:hover {
 
 /* Contact Page Container */
 .container {
-    margin: 100px auto;
+    margin: auto;
     width: 100%;
     padding: 20px;
     background-color: rgba(33, 46, 69, 0.7);

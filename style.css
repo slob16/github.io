@@ -170,14 +170,4 @@ input[type="submit"]:hover {
     background-color: #faf9f6;
 }
 
-/* Responsive adjustment */
-@media (max-width: 768px) {
-    .container {
-        width: 90%; /* Reduce width for smaller screens */
-    }
-    
-    .content {
-        padding: 10px; /* Adjust padding for smaller screens */
-    }
-
 

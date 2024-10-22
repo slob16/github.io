@@ -51,7 +51,7 @@ nav.scrolled {
 
 /* Header styling */
 header {
-    padding-top: 20px; /* Ensures there's space below the fixed navbar */
+    padding-top: 30px; /* Ensures there's space below the fixed navbar */
     width: 100%;
 }
 
@@ -72,7 +72,7 @@ header {
 h2 {
     color: #e1ec50; /* Text color */
     font-size: 30px; /* Font size */
-    margin: 5px 0; /* Space above and below the header */
+    margin: 10px 0; /* Space above and below the header */
     text-align: center; /* Center the text */
     font-weight: bold; /* Make the text bold */
 }
@@ -108,7 +108,7 @@ footer a:hover {
 
 /* Contact Page Container */
 .container {
-    margin: 150px auto;
+    margin: 50px auto;
     width: 50%;
     padding: 20px;
     background-color: rgba(33, 46, 69, 0.7);

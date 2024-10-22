@@ -12,7 +12,7 @@ body {
 }
 /* Main body text style */
 body {
-    font-family: Arial, sans-serif; /* Change to your desired font */
+    font-family: 'Roboto', sans-serif; /* Change to your desired font */
     color: #faf9f6; /* Main body text color */
 }
 
@@ -62,11 +62,6 @@ nav.scrolled {
 
 .nav-links a:hover {
     color: #e1ec50;
-}
-
-/* Spacer */
-.spacer {
-    height: 5px; /* Adjust the height of the spacer as needed */
 }
 
 /* Header */
@@ -142,6 +137,7 @@ body {
 }
 
 /* Glassmorphism Effect for the Form Container */
+/* Centering the contact form box */
 .container {
     width: 50%;
     padding: 20px;
@@ -151,7 +147,12 @@ body {
     -webkit-backdrop-filter: blur(8px);
     border-radius: 10px;
     border: 1px solid rgba(225, 236, 80, 0.7);
-    margin-top: 50px;
+    
+    /* Flexbox centering */
+    margin: 0 auto; /* Horizontal centering */
+    position: relative; /* Position relative so top margin works */
+    top: 50%; /* Push container to the middle vertically */
+    transform: translateY(-50%); /* Vertically center the container */
 }
 
 h2 {

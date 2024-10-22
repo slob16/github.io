@@ -118,7 +118,7 @@ footer a:hover {
 .container {
     width: 50%; /* Adjust this to your desired width */
     max-width: 600px; /* Maximum width */
-    padding: 40px; /* Padding for inner spacing */
+    padding: 30px; /* Padding for inner spacing */
     margin: 150px auto; /* Center the container */
     background-color: rgba(33, 46, 69, 0.7); /* Background color */
     border-radius: 20px; /* Rounded corners */

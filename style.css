@@ -115,15 +115,14 @@ footer a:hover {
 
 /* Contact Page Container */
 .container {
-    width: 100%; /* Adjust this to your desired width */
-    max-width: 600px; /* Optional: maximum width */
+    width: 50%; /* Adjust this to your desired width */
+    max-width: 600px; /* Maximum width */
     padding: 20px; /* Padding for inner spacing */
     margin: 30px auto; /* Center the container */
     background-color: rgba(33, 46, 69, 0.7); /* Background color */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37); /* Shadow effect */
 }
-
     margin: auto;
     width: auto;
     padding: 10px;

@@ -11,7 +11,7 @@ body {
     background-color: #212e45;
     color: #faf9f6;
     text-align: center;
-    max-width: 1500; /* Set a maximum width for the body */
+    max-width: 1000; /* Set a maximum width for the body */
     margin: 0 auto; /* Center the body */
 }
 
@@ -161,7 +161,7 @@ select {
     padding: 12px;
     border-radius: 5px;
     border: 1px solid #555;
-    background-color: #1d1d1d; /* Dark background for inputs */
+    background-color: #e1ec50; /* Dark background for inputs */
     color: #faf9f6; /* Light text color */
     font-size: 16px;
     box-sizing: border-box;

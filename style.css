@@ -1,8 +1,9 @@
 html, body {
-    width: 100%; /* Ensure full width */
-    height: 100%; /* Allow height to adjust based on content */
-    margin: 0; /* Remove default margins */
+    width: 100%; /* Ensure the body covers full width */
+    height: 100%; /* Ensure the body covers full height */
+    margin: 0; /* Remove default margin */
     padding: 0; /* Remove default padding */
+    box-sizing: border-box; /* Include padding and borders in the element's total width and height */
 }
 
 body {

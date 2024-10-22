@@ -72,7 +72,7 @@ header {
 h2 {
     color: #e1ec50; /* Text color */
     font-size: 30px; /* Font size */
-    margin: 10px 0; /* Space above and below the header */
+    margin: 5px 0; /* Space above and below the header */
     text-align: center; /* Center the text */
     font-weight: bold; /* Make the text bold */
 }

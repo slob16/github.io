@@ -113,69 +113,105 @@ footer a {
 footer a:hover {
     color: #faf9f6; /* Correct hover color */
 }
-
-/* Contact Page Container */
-/* Contact Page Container */
-.container {
-    width: 40%; /* Adjusted width */
+/* Form Container */
+.proposal-form {
+    background-color: rgba(33, 46, 69, 0.7); /* Consistent with your current theme */
+    padding: 40px;
+    width: 100%;
     max-width: 500px;
-    padding: 20px;
-    margin: 150px auto;
-    background-color: rgba(33, 46, 69, 0.7);
-    border-radius: 15px;
-    box-shadow: 0 8px 32px 0 rgba(225, 236, 80, 0.37);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(225, 236, 80, 0.7);
+    border-radius: 10px;
+    border: 1px solid rgba(225, 236, 80, 0.7); /* Same border as before */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    box-sizing: border-box;
+}
+
+/* Form Heading */
+.proposal-form h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #e1ec50; /* Consistent with your color scheme */
     text-align: center;
 }
 
-.container h2 {
-    font-size: 30px;
-    color: #e1ec50;
+.proposal-form p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #faf9f6; /* Text easier to read */
+}
+
+/* Form Group */
+.form-group {
     margin-bottom: 20px;
 }
 
 label {
-    line-height: 1.5;
-    font-size: 16px;
-    color: #faf9f6;
-    text-align: left;
     display: block;
-    margin-bottom: 8px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #e1ec50; /* Label color consistent with the scheme */
 }
 
-input, textarea {
-    width: 90%; /* Adjusted for better fit */
+/* Form Inputs */
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
     padding: 12px;
-    margin-bottom: 20px;
-    border-radius: 8px;
-    border: 1px solid rgba(225, 236, 80, 0.5);
-    background-color: #212e45; /* Dark background */
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #1d1d1d; /* Dark background for inputs */
     color: #faf9f6; /* Light text color */
     font-size: 16px;
-    transition: border 0.3s;
+    box-sizing: border-box;
 }
 
-input:focus, textarea:focus {
-    border: 1px solid #e1ec50; /* Highlighted border on focus */
-    outline: none;
+textarea {
+    resize: vertical;
+    height: 100px;
 }
 
+/* Submit Button */
 input[type="submit"] {
-    width: 90%; /* Full width within the container */
-    padding: 15px;
-    background-color: #e1ec50; /* Bright button background */
-    color: #212e45;
-    border-radius: 8px;
+    background-color: #e1ec50; /* Bright yellow color for button */
+    color: #212e45; /* Darker color for contrast */
     border: none;
+    padding: 15px;
     cursor: pointer;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 16px;
+    transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="submit"]:hover {
-    background-color: #fff700; /* Brighter on hover */
-    box-shadow: 0 0 15px #e1ec50; /* Glowing effect on hover */   
+    background-color: #fff700; /* Glow-like effect on hover */
+    box-shadow: 0 0 10px #e1ec50;
+    color: #212e45;
+}
+
+/* Message Area */
+.message {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.success {
+    color: #e1ec50; /* Same success color */
+}
+
+.error {
+    color: #f44336;
+}
+
+/* Required Field Indicator */
+.required::after {
+    content: "*";
+    color: #e1ec50; /* Consistent asterisk color */
+    margin-left: 5px;  
 }
 /* Responsive adjustment */
 @media (max-width: 768px) {

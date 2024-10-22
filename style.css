@@ -1,5 +1,5 @@
 html, body {
-    width: auto; /* Ensure full width */
+    width: 100%; /* Ensure full width */
     height: auto; /* Allow height to adjust based on content */
     margin: 0; /* Remove default margins */
     padding: 0; /* Remove default padding */
@@ -16,7 +16,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: auto;
+    width: 100%;
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
     display: flex;

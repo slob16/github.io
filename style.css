@@ -94,12 +94,17 @@ h2 {
 footer {
     background-color: #495061;
     color: #e1ec50; /* Footer text color */
-    padding: 10px;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: center;
     text-align: center;
     position: relative; /* Position relative for footer */
     width: 100%; /* Full width */
 }
 
+footer .footer-text {
+    margin: 0;
+}    
 footer a {
     color: #e1ec50; /* Correct link color */
     text-decoration: none; /* No underline */

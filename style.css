@@ -16,7 +16,7 @@ body {
 nav {
     position: fixed;
     top: 0;
-    width: 80%;
+    width: auto;
     background-color: rgba(33, 46, 69, 0.8);
     padding: 10px 20px;
     display: flex;
@@ -95,7 +95,7 @@ footer {
     align-items: center;
     text-align: center;
     position: relative; /* Position relative for footer */
-    width: 80%; /* Full width */
+    width: auto; /* Full width */
 }
 
 footer .footer-text {

@@ -51,7 +51,7 @@ nav.scrolled {
 
 /* Header styling */
 header {
-    padding-top: 50px; /* Ensures there's space below the fixed navbar */
+    padding-top: 20px; /* Ensures there's space below the fixed navbar */
     width: 100%;
 }
 
@@ -72,14 +72,14 @@ header {
 h2 {
     color: #e1ec50; /* Text color */
     font-size: 30px; /* Font size */
-    margin: 10px 0; /* Space above and below the header */
+    margin: 5px 0; /* Space above and below the header */
     text-align: center; /* Center the text */
     font-weight: bold; /* Make the text bold */
 }
 .content {
     margin: 20px auto;
     max-width: 800px; /* Limit the width of the content */
-    padding: 20px;
+    padding: 10px;
     text-align: center;
     font-size: 18px;
 }
@@ -134,7 +134,7 @@ label {
 
 input, textarea {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 20px;
     border-radius: 4px;
 }

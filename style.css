@@ -1,6 +1,7 @@
 html, body {
-    height: 100%; /* Full height */
-    margin: 0; /* Reset margin */
+    width: 100%; /* Ensure full width */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 0; /* Remove default margins */
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
